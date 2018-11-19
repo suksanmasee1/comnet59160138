@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./big-number.js"></script>
+    <script src="./Script.js"></script>
+    <script src="./ipv6.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Calculate</title>
+</head>
+<style type="text/css">
+
+
+
+h1{
+    color: white;
+text-align: center;
+font-size: 0.6in;
+text-shadow: 2px 2px red;
+
+}
+h2{
+    color:white;
+text-align: center;
+font-size: 0.3in;
+text-shadow: 2px 2px red;
+box-shadow: 10px 10px rgb(255, 0, 140);
+}
+h3{
+    color:navy;
+text-align:left;
+font-size: 0.2in;
+}
+h4{
+    color:navy;
+text-align:left;
+font-size: 0.2in;
+
+}
+body{
+    background-color:wheat;
+     background-repeat: no-repeat;
+}
+
+
+</style>
+<body>
+    <section class="nook">
+        <div>
+            <h1>Calculate IPv6</h1>
+            <h2>By 
+                Suksan Masee 59160138
+            </h2>
+        </div>
+    </section>
+    <section class="ppp">
+        <div>
+                <div class="add">
+                        <h3>IP Address</h3>
+                        <div>
+                            <input id="ip" placeholder="IP Address" />
+                        </div>
+                        <p  id="error"></p>
+                </div>
+        </div>
+    </section>  
+
+    <section class="pp22p">
+        <div>
+        <div >
+            <h4>Prefix length</h4>
+            <select aria-label="Prefix length" id="prefix" title="Prefix length" ="button" aria-haspopup="true"
+                aria-controls="dropdown-menu2">
+            </select>
+        </div>
+
+        <div>
+
+    <section class="button">
+<button>
+     <a onClick="checkIPV6()">Calculate click!!</a>
+</button>
+        </div>
+    </div>
+    </section> 
+    <section class="button">
+    
+
+
+    <section id="hide">
+        <div>
+            <div>
+                <h3>Calculated</h3>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>IP address</td>
+                            <td id="ipAddress"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Network</td>
+                            <td id="network"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Prefix length</td>
+                            <td id="prefixLength"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Network range</td>
+                            <td id="networkLengthStart"></td>
+
+                        </tr>
+                        <tr>
+                            <td></td>
+
+                            <td id="networkLengthEnd"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Total IP addresses</td>
+                            <td id="totalIP"></td>
+                        </tr>
+
+                        <tr>
+                            <td>IP address (full)</td>
+                            <td id="fullIP"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Integer ID</td>
+                            <td id="integerIP"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Hexadecimal ID</td>
+                            <td id="hexIP"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Dotted decimal ID</td>
+                            <td id="dotIP"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <br>
+    <section>
+        <div>
+            <div>
+                <form method="POST" action="">
+                    <div id="subnet"></div>
+                </form>
+
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+
+
+</body>
+<script>runPrefix(); hide();</script>
+
+</html>
